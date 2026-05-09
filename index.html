@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alejandra Stier | Obras</title>
+    <meta
+      name="description"
+      content="Galeria contemporanea de Alejandra Stier: obras, fichas individuales y consultas directas sobre cada pieza."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Alejandra Stier inicio">Alejandra Stier</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#obra">Obra</a>
+        <a href="#consulta">Consultas</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Pintura contemporanea</p>
+          <h1>Obras que se descubren de cerca.</h1>
+          <p>
+            Una galeria digital pensada para mirar cada pieza con pausa, conocer sus datos y
+            consultar por la obra exacta sin perder contexto.
+          </p>
+          <a class="primary-link" href="#obra">Ver galeria</a>
+        </div>
+        <figure class="hero-art">
+          <img src="assets/paintings/energia-de-color.png" alt="Obra abstracta Energia de color" />
+        </figure>
+      </section>
+
+      <section class="intro-band" aria-label="Presentacion">
+        <p>
+          Alejandra trabaja con capas, gestos y silencios visuales. Esta nueva experiencia prioriza
+          la obra: imagen grande, ficha clara, consulta directa y herramientas simples para decidir
+          que piezas se muestran.
+        </p>
+      </section>
+
+      <section class="gallery-section" id="obra">
+        <div class="section-heading">
+          <p class="eyebrow">Galeria</p>
+          <h2>Obras disponibles</h2>
+        </div>
+        <div class="gallery-tools" aria-label="Filtros de galeria">
+          <button class="filter-button is-active" type="button" data-filter="all">Todas</button>
+          <button class="filter-button" type="button" data-filter="Disponible">Disponibles</button>
+          <button class="filter-button" type="button" data-filter="Reservada">Reservadas</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </section>
+
+      <section class="contact-band" id="consulta">
+        <div>
+          <p class="eyebrow">Consultas</p>
+          <h2>Preguntar por una obra</h2>
+        </div>
+        <p>
+          Cada ficha abre una consulta con titulo, codigo y medidas ya cargadas. Asi la artista sabe
+          exactamente que pieza intereso al visitante.
+        </p>
+        <button class="secondary-link" type="button" id="generalInquiry">Consulta general</button>
+      </section>
+
+    </main>
+
+    <dialog class="art-dialog" id="artDialog">
+      <button class="close-button" id="closeDialog" type="button" aria-label="Cerrar">x</button>
+      <div class="dialog-body">
+        <img id="dialogImage" src="" alt="" />
+        <div class="dialog-copy">
+          <p class="eyebrow" id="dialogCode"></p>
+          <h2 id="dialogTitle"></h2>
+          <dl>
+            <div>
+              <dt>Tecnica</dt>
+              <dd id="dialogTechnique"></dd>
+            </div>
+            <div>
+              <dt>Medidas</dt>
+              <dd id="dialogSize"></dd>
+            </div>
+            <div>
+              <dt>Anio</dt>
+              <dd id="dialogYear"></dd>
+            </div>
+            <div>
+              <dt>Estado</dt>
+              <dd id="dialogStatus"></dd>
+            </div>
+          </dl>
+          <p id="dialogDescription"></p>
+          <button class="primary-link as-button" id="dialogInquiry" type="button">Consultar esta obra</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="inquiry-dialog" id="inquiryDialog">
+      <button class="close-button" id="closeInquiry" type="button" aria-label="Cerrar">x</button>
+      <form class="inquiry-form" id="inquiryForm">
+        <p class="eyebrow">Nueva consulta</p>
+        <h2 id="inquiryHeading">Consulta por obra</h2>
+        <label>
+          Nombre
+          <input name="name" autocomplete="name" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" autocomplete="email" required />
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <input name="artwork" type="hidden" />
+        <button class="primary-link as-button" type="submit">Preparar email</button>
+      </form>
+    </dialog>
+
+    <footer class="site-footer">
+      <p>Alejandra Stier</p>
+      <a href="mailto:consultas@alejandrastier.com">consultas@alejandrastier.com</a>
+    </footer>
+
+    <script src="artworks.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
