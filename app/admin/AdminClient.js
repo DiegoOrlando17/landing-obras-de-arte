@@ -53,11 +53,11 @@ export default function AdminClient() {
 
       <main>
         <section className="admin-hero">
-          <p className="eyebrow">Gestion privada</p>
+          <p className="eyebrow">Gestion de galeria</p>
           <h1>Visibilidad de obras</h1>
           <p>
-            Esta pantalla permite ocultar o mostrar piezas ya cargadas en el sitio. Para sumar
-            nuevas obras, se agregan las imagenes y datos al repositorio y se vuelve a publicar.
+            Esta pantalla permite ocultar o mostrar piezas ya cargadas en el sitio, manteniendo la
+            misma identidad visual de la landing publicada.
           </p>
         </section>
 

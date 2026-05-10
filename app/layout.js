@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "Alejandra Stier | Obras",
   description:
-    "Galeria contemporanea de Alejandra Stier: obras, fichas individuales y consultas directas sobre cada pieza.",
+    "Galeria de Alejandra Stier: arte, calma, armonia y consultas directas sobre cada pieza.",
 };
 
 export default function RootLayout({ children }) {

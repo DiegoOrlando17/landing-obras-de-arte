@@ -74,10 +74,10 @@ export default function Home() {
       <main>
         <section className="hero" id="inicio">
           <div className="hero-copy">
-            <p className="eyebrow">Pintura contemporanea</p>
-            <h1>Obras que se descubren de cerca.</h1>
+            <p className="eyebrow">Arte, calma y equilibrio</p>
+            <h1>Obras para habitar la calma.</h1>
             <p>
-              Una galeria digital pensada para mirar cada pieza con pausa, conocer sus datos y
+              Una galeria digital pensada para mirar cada pieza con pausa, reconocer su energia y
               consultar por la obra exacta sin perder contexto.
             </p>
             <a className="primary-link" href="#obra">
@@ -91,9 +91,9 @@ export default function Home() {
 
         <section className="intro-band" aria-label="Presentacion">
           <p>
-            Alejandra trabaja con capas, gestos y silencios visuales. Esta nueva experiencia
-            prioriza la obra: imagen grande, ficha clara, consulta directa y herramientas simples
-            para decidir que piezas se muestran.
+            Alejandra trabaja desde la armonia entre color, gesto y silencio visual. Esta nueva
+            experiencia prioriza la obra: imagen grande, ficha clara, consulta directa y una
+            navegacion serena para descubrir cada pieza.
           </p>
         </section>
 
