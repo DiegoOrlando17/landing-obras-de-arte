@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 import { artworks, storageKeys } from "../lib/artworks";
 
 const readJson = (key, fallback) => {
@@ -67,7 +66,6 @@ export default function Home() {
         <nav className="nav" aria-label="Principal">
           <a href="#obra">Obra</a>
           <a href="#consulta">Consultas</a>
-          <Link href="/admin">Gestion</Link>
         </nav>
       </header>
 
