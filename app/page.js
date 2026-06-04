@@ -177,9 +177,7 @@ function ArtworkDialog({ artwork, isOpen, onClose, onInquiry }) {
   return (
     <div className="dialog-backdrop" role="presentation">
       <section className="art-dialog modal-shell" role="dialog" aria-modal="true" aria-labelledby="art-title">
-        <button className="close-button" type="button" aria-label="Cerrar" onClick={onClose}>
-          x
-        </button>
+        <button className="close-button" type="button" aria-label="Cerrar" onClick={onClose} />
         <div className="dialog-body">
           <img src={artwork.image} alt={artwork.title} />
           <div className="dialog-copy">
@@ -239,9 +237,7 @@ function InquiryDialog({ artwork, isOpen, onClose }) {
   return (
     <div className="dialog-backdrop" role="presentation">
       <section className="inquiry-dialog modal-shell" role="dialog" aria-modal="true" aria-labelledby="inquiry-title">
-        <button className="close-button" type="button" aria-label="Cerrar" onClick={onClose}>
-          x
-        </button>
+        <button className="close-button" type="button" aria-label="Cerrar" onClick={onClose} />
         <form className="inquiry-form" onSubmit={handleSubmit}>
           <p className="eyebrow">Nueva consulta</p>
           <h2 id="inquiry-title">{artwork ? `Consulta por ${artwork.title}` : "Consulta general"}</h2>
